@@ -1,3 +1,4 @@
+
 :root{
   --texto: #060a0b; 
   --fondo: #f7fbfc; 
@@ -10,6 +11,14 @@ body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--fondo);
   color: var(--texto);
+}
+
+header {
+  background: var(--Primario);
+  border-bottom: 2px solid var(--botones);
+}
+.color-li a{
+  color: #f7fbfc;
 }
 
 /* Estilos para el carousel */
@@ -141,4 +150,6 @@ body {
     padding: 0.8rem 2rem;
     font-size: 1.05rem;
   }
-}
+
+
+
