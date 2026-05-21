@@ -1,9 +1,8 @@
-
-:root{
-  --texto: #060a0b; 
-  --fondo: #f7fbfc; 
-  --primario: #44a8c7; 
-  --secundario: #88cfe6; 
+:root {
+  --texto: #060a0b;
+  --fondo: #f7fbfc;
+  --primario: #44a8c7;
+  --secundario: #88cfe6;
   --botones: #e49622;
 }
 
@@ -14,10 +13,11 @@ body {
 }
 
 header {
-  background: var(--Primario);
+  background: var(--primario);
   border-bottom: 2px solid var(--botones);
 }
-.color-li a{
+
+.color-li a {
   color: #f7fbfc;
 }
 
@@ -71,6 +71,7 @@ header {
     height: 14px;
     margin: 0 8px;
   }
+
   .carousel-indicators .active {
     width: 35px;
     border-radius: 14px;
@@ -150,6 +151,4 @@ header {
     padding: 0.8rem 2rem;
     font-size: 1.05rem;
   }
-
-
-
+}
