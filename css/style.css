@@ -1,8 +1,15 @@
-:root{
---texto: #060a0b; 
---fondo: #f7fbfc; 
---Primario: #44a8c7; 
---secundario: #88cfe6; 
---botones: #e49622;
+:root {
+  --texto: #060a0b;
+  --fondo: #f7fbfc;
+  --Primario: #44a8c7;
+  --secundario: #88cfe6;
+  --botones: #e49622;
 }
 
+header {
+  background: var(--Primario);
+  border-bottom: 2px solid var(--botones);
+}
+.color-li a {
+  color: #f7fbfc;
+}
