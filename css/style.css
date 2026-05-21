@@ -1,7 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap');
+
 :root{
---texto: #060a0b; 
---fondo: #f7fbfc; 
---Primario: #44a8c7; 
---secundario: #88cfe6; 
---botones: #e49622;
+  --texto: #060a0b; 
+  --fondo: #f7fbfc; 
+  --primario: #44a8c7; 
+  --secundario: #88cfe6; 
+  --botones: #e49622;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+/* Estilos para el carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--texto);
+}
+
+/* Control de altura responsivo y ajuste de imagen */
+.carouselImg {
+  height: 55vh;
+  object-fit: cover;
+  transition: transform 6s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .carouselImg {
+    height: 75vh;
+  }
+}
+
+/* Animación sutil de zoom de fondo al activarse */
+.carousel-item.active .carouselImg {
+  transform: scale(1.08);
+}
+
+/* Indicadores personalizados */
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--secundario);
+  opacity: 0.5;
+  border: none;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+  width: 25px;
+  border-radius: 10px;
+  background-color: var(--primario);
+  opacity: 1;
+}
+
+/* Flechas de navegación  */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 12%;
+  min-width: 50px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1 !important;
+  background-color: rgba(6, 10, 11, 0.15);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 45%;
+  padding: 1.3rem;
+  border-radius: 50%;
+  background-color: rgba(6, 10, 11, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: var(--primario);
+  border-color: var(--primario);
+  transform: scale(1.1);
 }
