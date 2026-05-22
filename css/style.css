@@ -145,6 +145,11 @@ header {
   transform: translateX(-50%) translateY(-1px);
 }
 
+/* Footer */
+.bckfooter{
+    background-color: var(--primario);
+}
+
 @media (min-width: 768px) {
   #carouselCaption .btnDetail {
     bottom: 70px;
