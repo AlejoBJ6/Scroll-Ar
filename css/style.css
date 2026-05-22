@@ -261,3 +261,30 @@ footer{
   color: #ffffff;
   transform: translateY(-2px);
 }
+
+/* Paginación Personalizada */
+.pagination .page-link {
+  color: var(--texto);
+  background-color: #ffffff;
+  border: 1px solid rgba(6, 10, 11, 0.1);
+  transition: all 0.2s ease;
+  padding: 0.5rem 0.9rem;
+}
+
+.pagination .page-link:hover {
+  background-color: var(--secundario);
+  color: var(--texto);
+  border-color: var(--secundario);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--botones);
+  border-color: var(--botones);
+  color: #ffffff;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #a0a0a0;
+  background-color: #f1f1f1;
+  border-color: rgba(6, 10, 11, 0.05);
+}
