@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: var(--fondo);
   color: var(--texto);
 }
@@ -15,6 +15,10 @@ body {
 header {
   background: var(--primario);
   border-bottom: 2px solid var(--botones);
+}
+
+footer{
+    border-top: 2px solid var(--botones);
 }
 
 .color-li a {
@@ -146,8 +150,26 @@ header {
 }
 
 /* Footer */
-.bckfooter{
-    background-color: var(--primario);
+.bckfooter {
+  background-color: var(--primario);
+  color: var(--fondo);
+}
+.textoredes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.paddingsimbolos {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 20px;
+}
+.bi {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.bi:hover {
+  transform: scale(1.5);
 }
 
 @media (min-width: 768px) {
