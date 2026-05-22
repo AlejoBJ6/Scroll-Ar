@@ -339,3 +339,16 @@ footer{
 .category-list .list-group-item:hover {
   background-color: #f9fbfb;
 }
+
+/* Área de Publicidad */
+.ad-simple-card {
+  border: 2px dashed rgba(6, 10, 11, 0.1) !important;
+  background-color: rgba(68, 168, 199, 0.03) !important;
+  transition: all 0.3s ease;
+}
+
+.ad-simple-card:hover {
+  background-color: rgba(68, 168, 199, 0.07) !important;
+  border-color: var(--primario) !important;
+  transform: translateY(-2px);
+}
