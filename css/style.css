@@ -288,3 +288,32 @@ footer{
   background-color: #f1f1f1;
   border-color: rgba(6, 10, 11, 0.05);
 }
+
+/* Sidebar General */
+.sidebar-card {
+  border-radius: 12px !important;
+  background-color: #ffffff;
+}
+
+/* Buscador */
+.input-buscar {
+  border-color: rgba(6, 10, 11, 0.1);
+  padding: 0.6rem 1rem;
+}
+
+.input-buscar:focus {
+  border-color: var(--primario);
+  box-shadow: 0 0 0 0.25rem rgba(68, 168, 199, 0.25);
+}
+
+.btn-buscar {
+  background-color: var(--primario);
+  border: 1px solid rgba(6, 10, 11, 0.1);
+  padding: 0.6rem 1.2rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-buscar:hover {
+  background-color: var(--texto);
+  border-color: var(--texto);
+}
