@@ -163,10 +163,12 @@ footer{
   justify-content: center;
   align-self: center;
   gap: 20px;
+  padding-bottom: 32px;
 }
-.bi {
-  cursor: pointer;
-  transition: 0.2s;
+a i{
+  display: inline-block;
+      cursor: pointer;
+    transition: 0.2s;
 }
 .bi:hover {
   transform: scale(1.5);
