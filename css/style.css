@@ -370,3 +370,20 @@ a i {
   border-color: var(--primario) !important;
   transform: translateY(-2px);
 }
+
+/* Página 404 */
+.error-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 40px;
+}
+.texto404 {
+  width: 50%;
+}
+.imagen404 {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
