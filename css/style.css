@@ -1,3 +1,8 @@
+.montserratuniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 :root {
   --texto: #060a0b;
   --fondo: #f7fbfc;
@@ -7,7 +12,7 @@
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--fondo);
   color: var(--texto);
 }
@@ -17,10 +22,17 @@ header {
   border-bottom: 2px solid var(--botones);
 }
 
-footer{
-    border-top: 2px solid var(--botones);
+footer {
+  border-top: 2px solid var(--botones);
 }
-
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
 .color-li a {
   color: #f7fbfc;
 }
@@ -163,8 +175,10 @@ footer{
   justify-content: center;
   align-self: center;
   gap: 20px;
+  padding-bottom: 32px;
 }
-.bi {
+a i {
+  display: inline-block;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -189,7 +203,7 @@ footer{
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -201,7 +215,9 @@ footer{
 
 /* Tarjetas de Blog */
 .blog-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border-radius: 12px !important;
   background-color: #ffffff;
 }
@@ -323,7 +339,9 @@ footer{
   color: var(--texto);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease, padding-left 0.2s ease;
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
   display: inline-block;
 }
 
@@ -351,4 +369,22 @@ footer{
   background-color: rgba(68, 168, 199, 0.07) !important;
   border-color: var(--primario) !important;
   transform: translateY(-2px);
+}
+
+/* Página 404 */
+.error-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 40px;
+}
+.texto404 {
+  width: 50%;
+}
+.imagen404 {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 50px;
 }
