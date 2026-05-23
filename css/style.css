@@ -383,7 +383,8 @@ a i {
   width: 50%;
 }
 .imagen404 {
-  width: 50%;
+  width: 80%;
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
+  padding-right: 50px;
 }
