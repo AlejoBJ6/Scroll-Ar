@@ -22,8 +22,130 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container color-li">
+          <a href="./index.html" class="navbar-brand">Proyect-G4</a>
+          <button
+            class="navbar-toggler border"
+            data-bs-toggle="collapse"
+            data-bs-target="#opciones-menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="opciones-menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item color-li">
+                <a class="nav-link active" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item color-li">
+                <a class="nav-link" href="./pages/grilla.html"> Login</a>
+              </li>
+              <li class="nav-item color-li">
+                <a class="nav-link" href="#">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item color-li">
+                <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+              </li>
+              <li class="nav-link nav-item mx-md-2 my-2 my-lg-0">
+                <button
+                  class="btn btn-warning fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#newsletterModal"
+                >
+                  Suscribite
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- zona del modal de Suscribite -->
+      <div
+        class="modal fade"
+        id="newsletterModal"
+        tabindex="-1"
+        aria-labelledby="newsletterModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- HEADER DEL MODAL -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="newsletterModalLabel">
+                Suscribite a nuestro Newsletter y recibí todas nuestras
+                novedades
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- BODDY DEL MODAL -->
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="emailNewsletter" class="form-label">
+                    Correo electrónico
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailNewsletter"
+                    placeholder="nombre@email.com"
+                  />
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Suscribirme
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Uups!</h1>
+      <h2>Error 404</h2>
+      <h4>¿A donde te metiste panflín?</h4>
+      <h5>
+        Esta página no existe, te recomendamos visitar otros de nuestros sitios.
+      </h5>
+    </main>
+    <footer class="bckfooter py-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <p class="navbar-brand fs-3 text-center">Proyect-G4</p>
+            <p class="pb-3 text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ab
+              soluta porro nisi ipsam!
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <p class="textoredes pb-3">¡Seguinos!</p>
+            <div class="paddingsimbolos">
+              <a href="./404.html"><i class="bi bi-tiktok text-light"></i></a>
+              <a href="./404.html"
+                ><i class="bi bi-instagram text-light"></i
+              ></a>
+              <a href="./404.html"><i class="bi bi-facebook text-light"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pb-2">
+            <p class="navbar-brand fs-3 text-center">Contacto</p>
+            <p class="text-center">
+              <strong>Correo:</strong> emaildeproyecto&#64;gmail.com
+            </p>
+            <p class="text-center">
+              <strong>Telefóno:</strong> +54 123 456 789
+            </p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
