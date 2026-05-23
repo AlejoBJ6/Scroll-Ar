@@ -3,6 +3,7 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 :root {
   --texto: #060a0b;
   --fondo: #f7fbfc;
@@ -25,14 +26,17 @@ header {
 footer {
   border-top: 2px solid var(--botones);
 }
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 main {
   flex-grow: 1;
 }
+
 .color-li a {
   color: #f7fbfc;
 }
@@ -166,10 +170,12 @@ main {
   background-color: var(--primario);
   color: var(--fondo);
 }
+
 .textoredes {
   text-align: center;
   font-size: 1.8rem;
 }
+
 .paddingsimbolos {
   display: flex;
   justify-content: center;
@@ -177,11 +183,13 @@ main {
   gap: 20px;
   padding-bottom: 32px;
 }
+
 a i {
   display: inline-block;
   cursor: pointer;
   transition: 0.2s;
 }
+
 .bi:hover {
   transform: scale(1.5);
 }
@@ -379,9 +387,11 @@ a i {
   margin-top: 40px;
   padding: 40px;
 }
+
 .texto404 {
   width: 50%;
 }
+
 .imagen404 {
   width: 80%;
   display: flex;
