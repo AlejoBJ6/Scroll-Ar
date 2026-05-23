@@ -261,3 +261,94 @@ footer{
   color: #ffffff;
   transform: translateY(-2px);
 }
+
+/* Paginación Personalizada */
+.pagination .page-link {
+  color: var(--texto);
+  background-color: #ffffff;
+  border: 1px solid rgba(6, 10, 11, 0.1);
+  transition: all 0.2s ease;
+  padding: 0.5rem 0.9rem;
+}
+
+.pagination .page-link:hover {
+  background-color: var(--secundario);
+  color: var(--texto);
+  border-color: var(--secundario);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--botones);
+  border-color: var(--botones);
+  color: #ffffff;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #a0a0a0;
+  background-color: #f1f1f1;
+  border-color: rgba(6, 10, 11, 0.05);
+}
+
+/* Sidebar General */
+.sidebar-card {
+  border-radius: 12px !important;
+  background-color: #ffffff;
+}
+
+/* Buscador */
+.input-buscar {
+  border-color: rgba(6, 10, 11, 0.1);
+  padding: 0.6rem 1rem;
+}
+
+.input-buscar:focus {
+  border-color: var(--primario);
+  box-shadow: 0 0 0 0.25rem rgba(68, 168, 199, 0.25);
+}
+
+.btn-buscar {
+  background-color: var(--primario);
+  border: 1px solid rgba(6, 10, 11, 0.1);
+  padding: 0.6rem 1.2rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-buscar:hover {
+  background-color: var(--texto);
+  border-color: var(--texto);
+}
+
+/* Lista de Categorías */
+.category-link {
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: inline-block;
+}
+
+.category-link:hover {
+  color: var(--primario);
+  padding-left: 5px;
+}
+
+.category-list .list-group-item {
+  transition: background-color 0.2s ease;
+}
+
+.category-list .list-group-item:hover {
+  background-color: #f9fbfb;
+}
+
+/* Área de Publicidad */
+.ad-simple-card {
+  border: 2px dashed rgba(6, 10, 11, 0.1) !important;
+  background-color: rgba(68, 168, 199, 0.03) !important;
+  transition: all 0.3s ease;
+}
+
+.ad-simple-card:hover {
+  background-color: rgba(68, 168, 199, 0.07) !important;
+  border-color: var(--primario) !important;
+  transform: translateY(-2px);
+}

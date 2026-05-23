@@ -235,10 +235,66 @@
                 <a href="./pages/error404.html" class="btn btn-blog mt-2">Ver más</a>
               </div>
             </article>
+            <!-- Paginación -->
+            <nav aria-label="Navegación del blog" class="my-5">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a></li>
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+              </ul>
+            </nav>
           </div>
           <!-- Columna Derecha: Sidebar -->
           <div class="col-12 col-md-5 col-lg-4 mt-5 mt-md-0" id="columna-sidebar">
-            <h3>Búsqueda y Categorías</h3>
+            <!-- Buscador -->
+            <h3 class="section-title fw-bold h4 mb-4">Buscar</h3>
+            <div class="card p-3 border-0 shadow-sm mb-4 sidebar-card">
+              <!-- Usamos atributos nativos de html como action y method para simular una busqueda -->
+              <form action="#" method="GET">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control border-end-0 input-buscar"
+                    placeholder="Buscar artículos..."
+                    aria-label="Buscar artículos"
+                    required
+                  />
+                  <button class="btn btn-buscar border-start-0" type="submit">
+                    <i class="bi bi-search text-white"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- Categorías -->
+            <h3 class="section-title fw-bold h4 mb-4 mt-5">Categorías</h3>
+            <div class="card border-0 shadow-sm mb-4 sidebar-card">
+              <div class="card-body p-3">
+                <ul class="list-group list-group-flush category-list">
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0 border-bottom">
+                    <a href="#" class="category-link"><i class="bi bi-emoji-laughing me-2 text-primary"></i>Memes</a>
+                    <span class="badge rounded-pill bg-light text-dark">5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0 border-bottom">
+                    <a href="#" class="category-link"><i class="bi bi-lightbulb me-2 text-primary"></i>Datos Curiosos</a>
+                    <span class="badge rounded-pill bg-light text-dark">12</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0 border-0">
+                    <a href="#" class="category-link"><i class="bi bi-journal-text me-2 text-primary"></i>Etimología</a>
+                    <span class="badge rounded-pill bg-light text-dark">7</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Publicidad (Oculto en celular) -->
+            <div class="card border-0 shadow-sm d-none d-md-block sidebar-card ad-simple-card mb-4 mt-5">
+              <div class="card-body p-4 text-center rounded-3">
+                <span class="text-muted small fw-bold">ANUNCIO PATROCINADO</span>
+                <h4 class="h5 fw-bold mt-2 text-dark">Tu Publicidad Aquí</h4>
+                <p class="small text-secondary mb-0">Espacio disponible para promocionar tus productos o servicios.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
