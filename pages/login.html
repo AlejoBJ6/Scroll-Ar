@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyecto final del modulo de Frontend de Rolling Code - Iniciar Sesión" />
+  <meta name="author" content="Acuña Alejo, Cid Lucas, Roda Gabriel" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Login - Proyect-G4</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container color-li">
+        <a href="../index.html" class="navbar-brand">Proyect-G4</a>
+        <button class="navbar-toggler border" data-bs-toggle="collapse" data-bs-target="#opciones-menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="opciones-menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item color-li">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item color-li">
+              <a class="nav-link active" href="./login.html"> Login</a>
+            </li>
+            <li class="nav-item color-li">
+              <a class="nav-link" href="#">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item color-li">
+              <a class="nav-link" href="./contactos.html">Contactos</a>
+            </li>
+            <li class="nav-link nav-item mx-md-2 my-2 my-lg-0">
+              <button class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+                Suscribite
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- zona del modal de Suscribite -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- HEADER DEL MODAL -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Suscribite a nuestro Newsletter y recibí todas nuestras novedades
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- BODDY DEL MODAL -->
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="emailNewsletter" class="form-label">
+                  Correo electrónico
+                </label>
+                <input type="email" class="form-control" id="emailNewsletter" placeholder="nombre@email.com" />
+              </div>
+              <button type="submit" class="btn btn-warning w-100">
+                Suscribirme
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main></main>
+  <footer class="bckfooter py-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <p class="navbar-brand fs-3 text-center">Proyect-G4</p>
+          <p>(Frase o lema del proyecto...)</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="textoredes">¡Seguinos!</p>
+          <div class="paddingsimbolos">
+            <a href="./404.html"><i class="bi bi-tiktok text-light"></i></a>
+            <a href="./404.html"><i class="bi bi-instagram text-light"></i></a>
+            <a href="./404.html"><i class="bi bi-facebook text-light"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="navbar-brand fs-3 text-center">Contacto</p>
+          <p><strong>Correo:</strong> emaildeproyecto&#64;gmail.com</p>
+          <p><strong>Telefóno:</strong> +54 123 456 789</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+</html>
