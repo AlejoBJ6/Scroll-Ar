@@ -398,3 +398,7 @@ a i {
   justify-content: space-around;
   padding-right: 50px;
 }
+/* Página Nosotros */
+.redondez{
+  border-radius: 50%;
+}
