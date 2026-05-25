@@ -1,420 +1,298 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Proyecto final del modulo de Frontend de Rolling Code"
-    />
-    <meta name="author" content="Acuña Alejo, Cid Lucas, Roda Gabriel" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Documento</title>
-  </head>
-  <body>
-    <header class="container-fluid">
-      <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container color-li">
-          <a href="./index.html" class="navbar-brand">Proyect-G4</a>
-          <button
-            class="navbar-toggler border"
-            data-bs-toggle="collapse"
-            data-bs-target="#opciones-menu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="opciones-menu">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item color-li">
-                <a class="nav-link active" href="./index.html">Inicio</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyecto final del modulo de Frontend de Rolling Code" />
+  <meta name="author" content="Acuña Alejo, Cid Lucas, Roda Gabriel" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Documento</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container color-li">
+        <a href="./index.html" class="navbar-brand">Proyect-G4</a>
+        <button class="navbar-toggler border" data-bs-toggle="collapse" data-bs-target="#opciones-menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="opciones-menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item color-li">
+              <a class="nav-link active" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item color-li">
+              <a class="nav-link" href="./pages/login.html"> Login</a>
+            </li>
+            <li class="nav-item color-li">
+              <a class="nav-link" href="#">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item color-li">
+              <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+            </li>
+            <li class="nav-link nav-item mx-md-2 my-2 my-lg-0">
+              <button class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+                Suscribite
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- zona del modal de Suscribite -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- HEADER DEL MODAL -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Suscribite a nuestro Newsletter y recibí todas nuestras
+              novedades
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- BODDY DEL MODAL -->
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="emailNewsletter" class="form-label">
+                  Correo electrónico
+                </label>
+                <input type="email" class="form-control" id="emailNewsletter" placeholder="nombre@email.com" />
+              </div>
+              <button type="submit" class="btn btn-warning w-100">
+                Suscribirme
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Slider Principal (Carousel estándar de Bootstrap) -->
+    <div id="carouselCaption" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselCaption" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselCaption" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselCaption" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <!-- Diapositivas -->
+      <div class="carousel-inner">
+        <!-- Diapositiva 1 -->
+        <div class="carousel-item active">
+          <img src="./img/general/image.png" class="d-block w-100 carouselImg" alt="imagen de prueba" />
+          <a href="./pages/entrada-blog.html" class="btn btnDetail">Ver detalle</a>
+          <!-- me quedo el href vacio hasta que tengamos el error 404 -->
+        </div>
+        <!-- Diapositiva 2 -->
+        <div class="carousel-item">
+          <img src="#" class="d-block w-100 carouselImg" alt="" />
+          <a href="#" class="btn btnDetail">Ver detalle</a>
+          <!-- me quedo el href vacio hasta que tengamos el error 404 -->
+        </div>
+        <!-- Diapositiva 3 -->
+        <div class="carousel-item">
+          <img src="#" class="d-block w-100 carouselImg" alt="" />
+          <a href="#" class="btn btnDetail">Ver detalle</a>
+          <!-- me quedo el href vacio hasta que tengamos el error 404 -->
+        </div>
+      </div>
+      <!-- Controles de navegación -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaption" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCaption" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <!-- Sección de Contenido Principal: Dos Columnas -->
+    <section class="container my-5">
+      <div class="row">
+        <!-- Columna Izquierda: Entradas de Blog -->
+        <div class="col-12 col-md-7 col-lg-8" id="columna-entradas">
+          <h2 class="section-title fw-bold">Últimas Entradas</h2>
+          <!-- Entrada 1 -->
+          <article class="card mb-4 blog-card border-0 shadow-sm">
+            <div class="blog-card-img-wrapper overflow-hidden">
+              <img src="./img/general/image.png" class="card-img-top blog-card-img"
+                alt="Cómo optimizar tu flujo de trabajo en Frontend" />
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-2 text-muted small">
+                <span class="me-3"><i class="bi bi-calendar3 me-1"></i>22 de Mayo, 2026</span>
+                <span><i class="bi bi-person me-1"></i>Por Gabriel Roda</span>
+              </div>
+              <h3 class="card-title h4 fw-bold mb-3 blog-card-title">
+                Cómo optimizar tu flujo de trabajo en Frontend con
+                herramientas modernas
+              </h3>
+              <p class="card-text text-secondary blog-card-text">
+                Descubre las herramientas y metodologías clave que te
+                permitirán acelerar tus desarrollos web, automatizar tareas
+                repetitivas y mejorar la calidad de tu código sin perder el
+                control de tus proyectos.
+              </p>
+              <a href="./pages/entrada-blog.html" class="btn btn-blog mt-2">Ver más</a>
+            </div>
+          </article>
+          <!-- Entrada 2 -->
+          <article class="card mb-4 blog-card border-0 shadow-sm">
+            <div class="blog-card-img-wrapper overflow-hidden">
+              <img src="./img/general/image.png" class="card-img-top blog-card-img"
+                alt="La importancia del diseño responsive y UX" />
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-2 text-muted small">
+                <span class="me-3"><i class="bi bi-calendar3 me-1"></i>18 de Mayo, 2026</span>
+                <span><i class="bi bi-person me-1"></i>Por Lucas Cid</span>
+              </div>
+              <h3 class="card-title h4 fw-bold mb-3 blog-card-title">
+                La importancia del diseño responsive y UX en la web de hoy
+              </h3>
+              <p class="card-text text-secondary blog-card-text">
+                Un sitio web moderno debe lucir impecable en cualquier
+                dispositivo. Exploramos las mejores prácticas para estructurar
+                tus layouts en Bootstrap y CSS con una experiencia de usuario
+                sobresaliente.
+              </p>
+              <a href="./pages/404.html" class="btn btn-blog mt-2">Ver más</a>
+            </div>
+          </article>
+          <!-- Entrada 3 -->
+          <article class="card mb-4 blog-card border-0 shadow-sm">
+            <div class="blog-card-img-wrapper overflow-hidden">
+              <img src="./img/general/image.png" class="card-img-top blog-card-img" alt="Novedades sobre Bootstrap 5" />
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-2 text-muted small">
+                <span class="me-3"><i class="bi bi-calendar3 me-1"></i>12 de Mayo, 2026</span>
+                <span><i class="bi bi-person me-1"></i>Por Alejo Acuña</span>
+              </div>
+              <h3 class="card-title h4 fw-bold mb-3 blog-card-title">
+                Novedades sobre Bootstrap 5 y técnicas avanzadas de CSS
+              </h3>
+              <p class="card-text text-secondary blog-card-text">
+                Bootstrap 5 introduce mejoras significativas en rendimiento,
+                utilidades y personalización. Te enseñamos cómo sacar el
+                máximo provecho a sus clases y cómo extenderlas con tus
+                propias variables CSS.
+              </p>
+              <a href="./pages/404.html" class="btn btn-blog mt-2">Ver más</a>
+            </div>
+          </article>
+          <!-- Paginación -->
+          <nav aria-label="Navegación del blog" class="my-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
               </li>
-              <li class="nav-item color-li">
-                <a class="nav-link" href="#"> Login</a>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
               </li>
-              <li class="nav-item color-li">
-                <a class="nav-link" href="#">Acerca de nosotros</a>
-              </li>
-              <li class="nav-item color-li">
-                <a class="nav-link" href="./pages/contactos.html">Contactos</a>
-              </li>
-              <li class="nav-link nav-item mx-md-2 my-2 my-lg-0">
-                <button
-                  class="btn btn-warning fw-bold"
-                  data-bs-toggle="modal"
-                  data-bs-target="#newsletterModal"
-                >
-                  Suscribite
-                </button>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Siguiente</a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
-      </nav>
-      <!-- zona del modal de Suscribite -->
-      <div
-        class="modal fade"
-        id="newsletterModal"
-        tabindex="-1"
-        aria-labelledby="newsletterModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <!-- HEADER DEL MODAL -->
-            <div class="modal-header">
-              <h5 class="modal-title" id="newsletterModalLabel">
-                Suscribite a nuestro Newsletter y recibí todas nuestras
-                novedades
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <!-- BODDY DEL MODAL -->
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="emailNewsletter" class="form-label">
-                    Correo electrónico
-                  </label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="emailNewsletter"
-                    placeholder="nombre@email.com"
-                  />
-                </div>
-                <button type="submit" class="btn btn-warning w-100">
-                  Suscribirme
+        <!-- Columna Derecha: Sidebar -->
+        <div class="col-12 col-md-5 col-lg-4 mt-5 mt-md-0" id="columna-sidebar">
+          <!-- Buscador -->
+          <h3 class="section-title fw-bold h4 mb-4">Buscar</h3>
+          <div class="card p-3 border-0 shadow-sm mb-4 sidebar-card">
+            <!-- Usamos atributos nativos de html como action y method para simular una busqueda -->
+            <form action="#" method="GET">
+              <div class="input-group">
+                <input type="text" class="form-control border-end-0 input-buscar" placeholder="Buscar artículos..."
+                  aria-label="Buscar artículos" required />
+                <button class="btn btn-buscar border-start-0" type="submit">
+                  <i class="bi bi-search text-white"></i>
                 </button>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!-- Slider Principal (Carousel estándar de Bootstrap) -->
-      <div id="carouselCaption" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicadores -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselCaption"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselCaption"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselCaption"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <!-- Diapositivas -->
-        <div class="carousel-inner">
-          <!-- Diapositiva 1 -->
-          <div class="carousel-item active">
-            <img
-              src="./img/general/image.png"
-              class="d-block w-100 carouselImg"
-              alt="imagen de prueba"
-            />
-            <a href="./pages/entrada-blog.html" class="btn btnDetail"
-              >Ver detalle</a
-            >
-            <!-- me quedo el href vacio hasta que tengamos el error 404 -->
-          </div>
-          <!-- Diapositiva 2 -->
-          <div class="carousel-item">
-            <img src="#" class="d-block w-100 carouselImg" alt="" />
-            <a href="#" class="btn btnDetail">Ver detalle</a>
-            <!-- me quedo el href vacio hasta que tengamos el error 404 -->
-          </div>
-          <!-- Diapositiva 3 -->
-          <div class="carousel-item">
-            <img src="#" class="d-block w-100 carouselImg" alt="" />
-            <a href="#" class="btn btnDetail">Ver detalle</a>
-            <!-- me quedo el href vacio hasta que tengamos el error 404 -->
-          </div>
-        </div>
-        <!-- Controles de navegación -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselCaption"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselCaption"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-      <!-- Sección de Contenido Principal: Dos Columnas -->
-      <section class="container my-5">
-        <div class="row">
-          <!-- Columna Izquierda: Entradas de Blog -->
-          <div class="col-12 col-md-7 col-lg-8" id="columna-entradas">
-            <h2 class="section-title fw-bold">Últimas Entradas</h2>
-            <!-- Entrada 1 -->
-            <article class="card mb-4 blog-card border-0 shadow-sm">
-              <div class="blog-card-img-wrapper overflow-hidden">
-                <img
-                  src="./img/general/image.png"
-                  class="card-img-top blog-card-img"
-                  alt="Cómo optimizar tu flujo de trabajo en Frontend"
-                />
-              </div>
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-2 text-muted small">
-                  <span class="me-3"
-                    ><i class="bi bi-calendar3 me-1"></i>22 de Mayo, 2026</span
-                  >
-                  <span><i class="bi bi-person me-1"></i>Por Gabriel Roda</span>
-                </div>
-                <h3 class="card-title h4 fw-bold mb-3 blog-card-title">
-                  Cómo optimizar tu flujo de trabajo en Frontend con
-                  herramientas modernas
-                </h3>
-                <p class="card-text text-secondary blog-card-text">
-                  Descubre las herramientas y metodologías clave que te
-                  permitirán acelerar tus desarrollos web, automatizar tareas
-                  repetitivas y mejorar la calidad de tu código sin perder el
-                  control de tus proyectos.
-                </p>
-                <a href="./pages/entrada-blog.html" class="btn btn-blog mt-2"
-                  >Ver más</a
-                >
-              </div>
-            </article>
-            <!-- Entrada 2 -->
-            <article class="card mb-4 blog-card border-0 shadow-sm">
-              <div class="blog-card-img-wrapper overflow-hidden">
-                <img
-                  src="./img/general/image.png"
-                  class="card-img-top blog-card-img"
-                  alt="La importancia del diseño responsive y UX"
-                />
-              </div>
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-2 text-muted small">
-                  <span class="me-3"
-                    ><i class="bi bi-calendar3 me-1"></i>18 de Mayo, 2026</span
-                  >
-                  <span><i class="bi bi-person me-1"></i>Por Lucas Cid</span>
-                </div>
-                <h3 class="card-title h4 fw-bold mb-3 blog-card-title">
-                  La importancia del diseño responsive y UX en la web de hoy
-                </h3>
-                <p class="card-text text-secondary blog-card-text">
-                  Un sitio web moderno debe lucir impecable en cualquier
-                  dispositivo. Exploramos las mejores prácticas para estructurar
-                  tus layouts en Bootstrap y CSS con una experiencia de usuario
-                  sobresaliente.
-                </p>
-                <a href="./pages/404.html" class="btn btn-blog mt-2">Ver más</a>
-              </div>
-            </article>
-            <!-- Entrada 3 -->
-            <article class="card mb-4 blog-card border-0 shadow-sm">
-              <div class="blog-card-img-wrapper overflow-hidden">
-                <img
-                  src="./img/general/image.png"
-                  class="card-img-top blog-card-img"
-                  alt="Novedades sobre Bootstrap 5"
-                />
-              </div>
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-2 text-muted small">
-                  <span class="me-3"
-                    ><i class="bi bi-calendar3 me-1"></i>12 de Mayo, 2026</span
-                  >
-                  <span><i class="bi bi-person me-1"></i>Por Alejo Acuña</span>
-                </div>
-                <h3 class="card-title h4 fw-bold mb-3 blog-card-title">
-                  Novedades sobre Bootstrap 5 y técnicas avanzadas de CSS
-                </h3>
-                <p class="card-text text-secondary blog-card-text">
-                  Bootstrap 5 introduce mejoras significativas en rendimiento,
-                  utilidades y personalización. Te enseñamos cómo sacar el
-                  máximo provecho a sus clases y cómo extenderlas con tus
-                  propias variables CSS.
-                </p>
-                <a href="./pages/404.html" class="btn btn-blog mt-2">Ver más</a>
-              </div>
-            </article>
-            <!-- Paginación -->
-            <nav aria-label="Navegación del blog" class="my-5">
-              <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <a
-                    class="page-link"
-                    href="#"
-                    tabindex="-1"
-                    aria-disabled="true"
-                    >Anterior</a
-                  >
+          <!-- Categorías -->
+          <h3 class="section-title fw-bold h4 mb-4 mt-5">Categorías</h3>
+          <div class="card border-0 shadow-sm mb-4 sidebar-card">
+            <div class="card-body p-3">
+              <ul class="list-group list-group-flush category-list">
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 border-bottom">
+                  <a href="#" class="category-link"><i class="bi bi-emoji-laughing me-2 text-primary"></i>Memes</a>
+                  <span class="badge rounded-pill bg-light text-dark">5</span>
                 </li>
-                <li class="page-item active" aria-current="page">
-                  <a class="page-link" href="#">1</a>
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 border-bottom">
+                  <a href="#" class="category-link"><i class="bi bi-lightbulb me-2 text-primary"></i>Datos
+                    Curiosos</a>
+                  <span class="badge rounded-pill bg-light text-dark">12</span>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Siguiente</a>
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 border-0">
+                  <a href="#" class="category-link"><i class="bi bi-journal-text me-2 text-primary"></i>Etimología</a>
+                  <span class="badge rounded-pill bg-light text-dark">7</span>
                 </li>
               </ul>
-            </nav>
-          </div>
-          <!-- Columna Derecha: Sidebar -->
-          <div
-            class="col-12 col-md-5 col-lg-4 mt-5 mt-md-0"
-            id="columna-sidebar"
-          >
-            <!-- Buscador -->
-            <h3 class="section-title fw-bold h4 mb-4">Buscar</h3>
-            <div class="card p-3 border-0 shadow-sm mb-4 sidebar-card">
-              <!-- Usamos atributos nativos de html como action y method para simular una busqueda -->
-              <form action="#" method="GET">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-end-0 input-buscar"
-                    placeholder="Buscar artículos..."
-                    aria-label="Buscar artículos"
-                    required
-                  />
-                  <button class="btn btn-buscar border-start-0" type="submit">
-                    <i class="bi bi-search text-white"></i>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <!-- Categorías -->
-            <h3 class="section-title fw-bold h4 mb-4 mt-5">Categorías</h3>
-            <div class="card border-0 shadow-sm mb-4 sidebar-card">
-              <div class="card-body p-3">
-                <ul class="list-group list-group-flush category-list">
-                  <li
-                    class="list-group-item d-flex justify-content-between align-items-center px-0 border-bottom"
-                  >
-                    <a href="#" class="category-link"
-                      ><i class="bi bi-emoji-laughing me-2 text-primary"></i
-                      >Memes</a
-                    >
-                    <span class="badge rounded-pill bg-light text-dark">5</span>
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-between align-items-center px-0 border-bottom"
-                  >
-                    <a href="#" class="category-link"
-                      ><i class="bi bi-lightbulb me-2 text-primary"></i>Datos
-                      Curiosos</a
-                    >
-                    <span class="badge rounded-pill bg-light text-dark"
-                      >12</span
-                    >
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-between align-items-center px-0 border-0"
-                  >
-                    <a href="#" class="category-link"
-                      ><i class="bi bi-journal-text me-2 text-primary"></i
-                      >Etimología</a
-                    >
-                    <span class="badge rounded-pill bg-light text-dark">7</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- Publicidad (Oculto en celular) -->
-            <div
-              class="card border-0 shadow-sm d-none d-md-block sidebar-card ad-simple-card mb-4 mt-5"
-            >
-              <div class="card-body p-4 text-center rounded-3">
-                <span class="text-muted small fw-bold"
-                  >ANUNCIO PATROCINADO</span
-                >
-                <h4 class="h5 fw-bold mt-2 text-dark">Tu Publicidad Aquí</h4>
-                <p class="small text-secondary mb-0">
-                  Espacio disponible para promocionar tus productos o servicios.
-                </p>
-              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer class="bckfooter py-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <p class="navbar-brand fs-3 text-center">Proyect-G4</p>
-            <p class="pb-3 text-center">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ab
-              soluta porro nisi ipsam!
-            </p>
-          </div>
-          <div class="col-12 col-md-4">
-            <p class="textoredes pb-3">¡Seguinos!</p>
-            <div class="paddingsimbolos">
-              <a href="./pages/404.html"
-                ><i class="bi bi-tiktok text-light"></i
-              ></a>
-              <a href="./pages/404.html"
-                ><i class="bi bi-instagram text-light"></i
-              ></a>
-              <a href="./pages/404.html"
-                ><i class="bi bi-facebook text-light"></i
-              ></a>
+          <!-- Publicidad (Oculto en celular) -->
+          <div class="card border-0 shadow-sm d-none d-md-block sidebar-card ad-simple-card mb-4 mt-5">
+            <div class="card-body p-4 text-center rounded-3">
+              <span class="text-muted small fw-bold">ANUNCIO PATROCINADO</span>
+              <h4 class="h5 fw-bold mt-2 text-dark">Tu Publicidad Aquí</h4>
+              <p class="small text-secondary mb-0">
+                Espacio disponible para promocionar tus productos o servicios.
+              </p>
             </div>
-          </div>
-          <div class="col-12 col-md-4 pb-2">
-            <p class="navbar-brand fs-3 text-center">Contacto</p>
-            <p class="text-center">
-              <strong>Correo:</strong> emaildeproyecto&#64;gmail.com
-            </p>
-            <p class="text-center">
-              <strong>Telefóno:</strong> +54 123 456 789
-            </p>
-            <p></p>
           </div>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </section>
+  </main>
+  <footer class="bckfooter py-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <p class="navbar-brand fs-3 text-center">Proyect-G4</p>
+          <p class="pb-3 text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ab
+            soluta porro nisi ipsam!
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="textoredes pb-3">¡Seguinos!</p>
+          <div class="paddingsimbolos">
+            <a href="./pages/404.html"><i class="bi bi-tiktok text-light"></i></a>
+            <a href="./pages/404.html"><i class="bi bi-instagram text-light"></i></a>
+            <a href="./pages/404.html"><i class="bi bi-facebook text-light"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 pb-2">
+          <p class="navbar-brand fs-3 text-center">Contacto</p>
+          <p class="text-center">
+            <strong>Correo:</strong> emaildeproyecto&#64;gmail.com
+          </p>
+          <p class="text-center">
+            <strong>Telefóno:</strong> +54 123 456 789
+          </p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
