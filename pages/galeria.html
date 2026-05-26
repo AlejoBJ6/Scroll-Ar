@@ -1,18 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Proyecto final del modulo de Frontend de Rolling Code" />
-  <meta name="author" content="Acuña Alejo, Cid Lucas, Roda Gabriel" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="../css/style.css">
-  <title>Galeria</title>
-</head>
-<body>
-  <header class="container-fluid">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Proyecto final del modulo de Frontend de Rolling Code"
+    />
+    <meta name="author" content="Acuña Alejo, Cid Lucas, Roda Gabriel" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/galeria.css" />
+    <title>Galeria</title>
+  </head>
+  <body>
+    <header class="container-fluid">
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container color-li">
           <a href="../index.html" class="navbar-brand">Proyect-G4</a>
@@ -31,11 +41,24 @@
               <li class="nav-item color-li">
                 <a class="nav-link" href="./login.html"> Login</a>
               </li>
+              <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Explorar
+  </a>
+  
+  <ul class="dropdown-menu dropdown bg-warning" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="./galeria.html">Galeria</a></li>
+    <li><a class="dropdown-item" href="./404.html">Memes</a></li>
+    
+    <li><a class="dropdown-item" href="./404.html">Curiosidades</a></li>
+    <li><a class="dropdown-item" href="./404.html">Etimologias</a></li>
+    
+  </ul>
               <li class="nav-item color-li">
-                <a class="nav-link" href="#">Acerca de nosotros</a>
+                <a class="nav-link" href="./nosotros.html">Acerca de nosotros</a>
               </li>
               <li class="nav-item color-li">
-                <a class="nav-link" href="#">Contactos</a>
+                <a class="nav-link" href="./contactos.html">Contactos</a>
               </li>
               <li class="nav-link nav-item mx-md-2 my-2 my-lg-0">
                 <button
@@ -96,72 +119,90 @@
         </div>
       </div>
     </header>
-  <main class="my-5">
-    <section class="container" id="galeria">
-      <!-- Título de la sección -->
-      <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold">Galería de Imágenes</h1>
-        <p class="lead text-secondary">Explora nuestra colección de momentos e inspiración</p>
-        <div class="mx-auto" style="width: 80px; height: 4px; background-color: var(--botones); border-radius: 2px;"></div>
-      </div>
-      <!-- Grilla responsiva de la galería -->
-      <div class="row g-4">
-        <!-- Tarjeta 1 -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm overflow-hidden">
-            <img src="../img/general/image.png" class="card-img h-100" alt="Desarrollo Frontend" style="object-fit: cover; min-height: 200px; height: 100%;">
-          </div>
+    <main>
+      <!-- seccion imagenes -->
+      <!-- 1era imagen -->
+      <section class="grilla">
+        <div class="contenedor">
+          <img
+            src="../img/galeria/01-teor-Mus.png"
+            alt="Imagen guitarra acustica"
+          />
         </div>
-        <!-- Tarjeta 2 -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm overflow-hidden">
-            <img src="../img/general/image.png" class="card-img h-100" alt="Amanecer en la Montaña" style="object-fit: cover; min-height: 200px; height: 100%;">
-          </div>
+        <!-- segunda imagen -->
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt="Imagen guitarra acustica wn camping"
+          />
         </div>
-        <!-- Tarjeta 3 -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm overflow-hidden">
-            <img src="../img/general/image.png" class="card-img h-100" alt="Diseño UX/UI" style="object-fit: cover; min-height: 200px; height: 100%;">
-          </div>
+        <!-- tercer imagen -->
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt=" guitarra flamenca"
+          />
         </div>
-        <!-- Tarjeta 4 -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm overflow-hidden">
-            <img src="../img/general/image.png" class="card-img h-100" alt="Tecnología" style="object-fit: cover; min-height: 200px; height: 100%;">
-          </div>
+
+        <!-- tercer imagen -->
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt=" guitarra flamenca"
+          />
         </div>
-        <!-- Tarjeta 5 -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm overflow-hidden">
-            <img src="../img/general/image.png" class="card-img h-100" alt="Clean Code" style="object-fit: cover; min-height: 200px; height: 100%;">
-          </div>
+        <!-- tercer imagen -->
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt=" guitarra flamenca"
+          />
         </div>
-        <!-- Tarjeta 6 -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm overflow-hidden">
-            <img src="../img/general/image.png" class="card-img h-100" alt="Bosque de Pinos" style="object-fit: cover; min-height: 200px; height: 100%;">
-          </div>
+        <!-- tercer imagen -->
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt=" guitarra flamenca"
+          />
         </div>
-        <!-- Tarjeta 7 -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm overflow-hidden">
-            <img src="../img/general/image.png" class="card-img h-100" alt="Identidad Visual" style="object-fit: cover; min-height: 200px; height: 100%;">
-          </div>
+        <!-- tercer imagen -->
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt=" guitarra flamenca"
+          />
         </div>
-        <!-- Tarjeta 8 -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm overflow-hidden">
-            <img src="../img/general/image.png" class="card-img h-100" alt="Arte Abstracto" style="object-fit: cover; min-height: 200px; height: 100%;">
-          </div>
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt=" guitarra flamenca"
+          />
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="bckfooter py-3">
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt=" guitarra flamenca"
+          />
+        </div>
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt=" guitarra flamenca"
+          />
+        </div>
+        <div class="contenedor">
+          <img
+            src="../img/galeria/camping-concept-with-guitar.jpg"
+            alt=" guitarra flamenca"
+          />
+        </div>
+      </section>
+    </main>
+     <footer class="bckfooter py-3">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-4">
-            <p class="navbar-brand fs-3 text-center">Proyect-G4</p>
+            <p class="navbar-brand fs-3 text-center">Scroll-Ar!</p>
             <p class="pb-3 text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ab
               soluta porro nisi ipsam!
@@ -170,9 +211,15 @@
           <div class="col-12 col-md-4">
             <p class="textoredes pb-3">¡Seguinos!</p>
             <div class="paddingsimbolos">
-              <a href="./404.html"><i class="bi bi-tiktok text-light"></i></a>
-              <a href="./404.html"><i class="bi bi-instagram text-light"></i></a>
-              <a href="./404.html"><i class="bi bi-facebook text-light"></i></a>
+              <a href="./pages/404.html"
+                ><i class="bi bi-tiktok text-light"></i
+              ></a>
+              <a href="./pages/404.html"
+                ><i class="bi bi-instagram text-light"></i
+              ></a>
+              <a href="./pages/404.html"
+                ><i class="bi bi-facebook text-light"></i
+              ></a>
             </div>
           </div>
           <div class="col-12 col-md-4 pb-2">
@@ -193,5 +240,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
