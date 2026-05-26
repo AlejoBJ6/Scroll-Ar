@@ -25,6 +25,7 @@ header {
 
 footer {
   border-top: 2px solid var(--botones);
+  background-color: var(--primario);
 }
 
 body {
@@ -446,3 +447,10 @@ a i {
     }
 
 }
+
+
+
+
+
+
+ 
