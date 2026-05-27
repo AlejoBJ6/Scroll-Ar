@@ -62,7 +62,7 @@ main {
   position: relative;
 }
 
-img {
+.contenedor img {
   display: block;
   max-width: 100%;
   height: auto; 
@@ -75,23 +75,20 @@ img {
         display: grid;
     }
   .grilla {
-    
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12,1fr);
+    grid-template-rows: repeat(12, 1fr);
     gap: 1rem;
     width: 100%;
-    max-width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
     justify-items: stretch;
     justify-content: center; 
     .contenedor{
       width: 100%;
     max-width: 100%;
-
-
     }
   }
- 
 
 .contenedor:nth-child(1) {
   
@@ -104,9 +101,9 @@ img {
 
   }
   .contenedor:nth-child(3) {
-   
+  
     grid-column: 9/13;
-   
+  
   }
   .contenedor:nth-child(4) {
   
@@ -154,10 +151,10 @@ grid-row: 2/3;
 }
 
 @media (width >=992px){
- .grilla{
+.grilla{
   grid-template-columns: repeat(16,1fr);
   grid-template-rows: repeat(3,1fr);
- }
+}
 .contenedor:nth-child(1){
   grid-column: 1/8;
 }
@@ -175,11 +172,11 @@ grid-row: 2/3;
   grid-column: 1/8;
 }
 .contenedor:nth-child(11){
-   grid-column: 1/5;
- grid-row: 6/7 
+  grid-column: 1/5;
+  grid-row: 6/7 
 }
 .contenedor:nth-child(12){
-grid-column: 5/13;
+  grid-column: 5/13;
   grid-row: 6/7;
 }
 .contenedor:nth-child(13){
@@ -189,3 +186,46 @@ grid-column: 1/5;
 
 }
 
+/* Estilos para el nav (extraídos de style.css) */
+.color-li a,
+.navbar-nav .nav-link {
+  color: #f7fbfc;
+  transition: color 0.25s ease-in-out;
+}
+
+.color-li a:hover,
+.color-li a.active,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--botones) !important;
+}
+
+/* Estilos para el footer (extraídos de style.css) */
+.bckfooter {
+  background-color: var(--primario);
+  color: var(--fondo);
+}
+
+.textoredes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.paddingsimbolos {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
+a i {
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bi:hover {
+  transform: scale(1.5);
+}
+}
