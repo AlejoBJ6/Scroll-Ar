@@ -56,7 +56,9 @@ main a:not(.btn):not(.nav-link):not(.dropdown-item):not(.page-link) {
   color: var(--botones);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+  transition:
+    color 0.2s ease-in-out,
+    text-decoration 0.2s ease-in-out;
 }
 
 main a:not(.btn):not(.nav-link):not(.dropdown-item):not(.page-link):hover {
@@ -432,20 +434,20 @@ a i {
 .redondez {
   border-radius: 50%;
   box-shadow: 10px 10px 15px var(--primario);
-  transition: 0.3s
+  transition: 0.3s;
 }
-.redondez:hover{
-    transform: translateY(-10px);
+.redondez:hover {
+  transform: translateY(-10px);
 }
-.bcktexto{
+.bcktexto {
   background-color: var(--secundario);
   border-radius: 30px;
   margin-bottom: 30px;
-  p{
+  p {
     margin-bottom: 0px;
   }
 }
-.bcktexto:hover{
+.bcktexto:hover {
   transition: 0.4s;
   box-shadow: 3px 3px 3px rgb(109, 109, 109);
 }
@@ -490,12 +492,4 @@ a i {
     width: 180px;
     height: 180px;
   }
-
-
-
-
-
-
-
-
- 
+}
