@@ -433,9 +433,9 @@ a i {
   background-color: var(--secundario);
   border-radius: 30px;
   margin-bottom: 30px;
-  p{
-    margin-bottom: 0px;
-  }
+}
+.bcktexto p{
+  margin-bottom: 0px;
 }
 .bcktexto:hover{
   transition: 0.4s;
@@ -484,10 +484,15 @@ a i {
   }
 }
 
-
-
-
-
-
-
- 
+/* estilos para logo y avatar de comentarios*/
+.logo-img {
+  height: 75px;
+  object-fit: contain;
+}
+.avatar-comentario {
+  width: 80px;
+  height: 80px;
+}
+.login-img-container {
+  min-height: 450px;
+}
